@@ -3,6 +3,7 @@ import styles from '../styles/home.module.scss';
 import Navbar from 'components/Navbar';
 import LeftSideFilter from 'components/LeftSideFilter';
 import AllPosts from 'components/AllPosts';
+import RightSideContent from 'components/RightSideContent';
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
           <LeftSideFilter />
           <div className={styles.mainContent}>
             <AllPosts />
-            <section>more</section>
+            <RightSideContent />
           </div>
         </div>
       </main>

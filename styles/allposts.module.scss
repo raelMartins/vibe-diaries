@@ -1,7 +1,7 @@
 @import './mixins.module.scss';
 
 .allPostsSection {
-  width: 88rem;
+  min-width: 88rem;
   .addNewPost {
     @include addPostStyling;
   }
