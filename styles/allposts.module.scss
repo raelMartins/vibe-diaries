@@ -1,0 +1,35 @@
+@import './mixins.module.scss';
+
+.allPostsSection {
+  width: 88rem;
+  .addNewPost {
+    @include addPostStyling;
+  }
+}
+.addNewPostModal {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    h1 {
+      margin: 0rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+    svg {
+      font-size: 3rem;
+      color: #c8c8c8;
+      cursor: pointer;
+    }
+  }
+  .addNewPost {
+    @include addPostStyling;
+    .right {
+      textarea {
+        height: 14.4rem !important;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

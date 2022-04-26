@@ -1,12 +1,13 @@
-@import './home.module.scss';
+@import './mixins.module.scss';
 
 .leftSideFilter {
   //   padding: 0rem 4.2rem;
   position: sticky;
   top: 0;
+  padding: 0rem 4.2rem;
   .addGroupButton {
     font-size: 1.4rem;
-    padding: 0rem 4.2rem;
+    // padding: 0rem 4.2rem;
 
     button {
       display: flex;
@@ -31,22 +32,17 @@
     list-style-type: none;
     padding: 0rem;
     li {
-      padding: 2.6rem 4.2rem;
-      //   padding: 2.6rem 0rem;
-      //   padding: 0rem 4.2rem;
+      // padding: 2.6rem 4.2rem;
+      padding: 2.6rem 0rem;
       cursor: pointer;
       transition: 0.3s;
       &:hover {
-        background-color: #e5e5e5;
-        color: #696f79;
+        text-decoration: underline;
       }
     }
   }
   li:last-child {
     color: #ff4500;
     text-decoration: underline;
-    &:hover {
-      color: #ff4500;
-    }
   }
 }

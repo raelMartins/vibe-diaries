@@ -18,3 +18,38 @@ a {
 * {
   box-sizing: border-box;
 }
+
+//default styles for overlay
+.ReactModal__Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  transition: opacity 0.5s ease-in-out;
+}
+
+//disable background scroll when overlay is open
+.ReactModal__Body--open {
+  overflow: hidden !important;
+}
+
+//styling for all modal's content
+.ReactModal__Content {
+  position: absolute;
+  top: 50% !important;
+  left: 50% !important;
+  right: auto;
+  bottom: auto;
+  height: max-content !important;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) !important;
+  width: 90%;
+  max-width: 80rem;
+  background-color: white;
+  border: none !important;
+  outline: none !important;
+  padding: 0rem !important;
+  border-radius: 2.5rem !important;
+}
