@@ -150,7 +150,7 @@ const AllPosts = () => {
       </div>
       <footer>
         <h4>You have reached the end of your feed</h4>
-        <button>Refresh Page</button>
+        <button onClick={() => location.reload()}>Refresh Page</button>
       </footer>
     </section>
   );

@@ -5,6 +5,10 @@
   position: sticky;
   top: 0;
   padding: 0rem 4.2rem;
+  display: none;
+  @include desktop {
+    display: block;
+  }
   .addGroupButton {
     font-size: 1.4rem;
     // padding: 0rem 4.2rem;

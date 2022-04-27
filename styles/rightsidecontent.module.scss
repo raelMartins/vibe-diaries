@@ -1,10 +1,14 @@
 @import './mixins.module.scss';
 
 .rightSideContent {
-  min-width: 51.2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  min-width: 40rem;
+  max-width: 51.2rem;
+  display: none;
+  @include laptop {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
   .followRequests,
   .people {
     width: 100%;
@@ -107,7 +111,10 @@
         margin: 0rem;
         display: flex;
         align-items: center;
-        gap: 4rem;
+        gap: 2rem;
+        @include desktop {
+          gap: 4rem;
+        }
       }
       li {
         display: flex;
