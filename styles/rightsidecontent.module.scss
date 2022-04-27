@@ -65,6 +65,7 @@
       }
     }
     .accountButtons {
+      margin-top: 3rem;
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -125,6 +126,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          z-index: 0;
           img {
             // width: 100%;
             width: 5.4rem;
@@ -142,7 +144,7 @@
             height: 2.2rem;
             padding: 0.4rem;
             background-color: white;
-            z-index: 2;
+            z-index: 1;
             border-radius: 50%;
             font-size: 1.4rem;
             cursor: pointer;
@@ -231,6 +233,41 @@
             background-color: #4caf50;
             border-radius: 50%;
           }
+        }
+      }
+    }
+  }
+  .extras {
+    ul {
+      padding: 0rem;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        svg {
+          font-size: 4rem;
+          margin-left: 1rem;
+          color: #388ffe;
+        }
+      }
+      li:nth-child(2) {
+        svg {
+          color: #c4337d;
+        }
+      }
+      li:nth-child(3) {
+        svg {
+          color: #30ad31;
+        }
+      }
+      li:nth-child(4) {
+        svg {
+          color: #fdb17e;
         }
       }
     }

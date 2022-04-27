@@ -4,6 +4,29 @@
   min-width: 88rem;
   .addNewPost {
     @include addPostStyling;
+    margin-bottom: 4rem;
+  }
+  .postList {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  footer {
+    text-align: center;
+    h4 {
+      font-weight: 400;
+      font-size: 1.6rem;
+    }
+    button {
+      background-color: #ff4500;
+      padding: 0.8rem 1.8rem;
+      color: white;
+      border: none;
+      outline: none;
+      line-height: 1.4em;
+      border-radius: 0.4rem;
+      font-family: 'Poppins', sans-serif;
+    }
   }
 }
 .addNewPostModal {

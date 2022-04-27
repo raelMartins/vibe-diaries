@@ -1,6 +1,11 @@
 import { AiOutlinePlus } from 'react-icons/ai';
 import { IoIosArrowForward } from 'react-icons/io';
-import { BsCameraVideoFill, BsSearch, BsThreeDots } from 'react-icons/bs';
+import {
+  BsCameraVideoFill,
+  BsSearch,
+  BsThreeDots,
+  BsInfoCircleFill
+} from 'react-icons/bs';
 import styles from 'styles/rightsidecontent.module.scss';
 
 const RightSideContent = () => {
@@ -42,30 +47,30 @@ const RightSideContent = () => {
               </li>
               <li>
                 <div className={styles.personImage}>
-                  <img src='/images/profile-photo-3.jpg' alt='Profile Photo' />
+                  <img src='/images/profile-photo-4.jpg' alt='Profile Photo' />
                   <span>
                     <AiOutlinePlus />
                   </span>
                 </div>
-                <div className={styles.personName}>Abigail Diana</div>
+                <div className={styles.personName}>John Cena</div>
               </li>
               <li>
                 <div className={styles.personImage}>
-                  <img src='/images/profile-photo-3.jpg' alt='Profile Photo' />
+                  <img src='/images/profile-photo-5.jpg' alt='Profile Photo' />
                   <span>
                     <AiOutlinePlus />
                   </span>
                 </div>
-                <div className={styles.personName}>Abigail Diana</div>
+                <div className={styles.personName}>Micheal Buble</div>
               </li>
               <li>
                 <div className={styles.personImage}>
-                  <img src='/images/profile-photo-3.jpg' alt='Profile Photo' />
+                  <img src='/images/profile-photo-6.jpg' alt='Profile Photo' />
                   <span>
                     <AiOutlinePlus />
                   </span>
                 </div>
-                <div className={styles.personName}>Abigail Diana</div>
+                <div className={styles.personName}>Elliot Nelson</div>
               </li>
             </ul>
             <div className={styles.seeMorePeople}>
@@ -91,70 +96,70 @@ const RightSideContent = () => {
           <ul>
             <li>
               <div className={styles.userDetails}>
-                <img src='/images/profile-photo-4.jpg' alt='Profile Photo' />
-                <p>Andrew Musk</p>
-              </div>
-              <div className={styles.lastActive}>
-                <span>2 min</span>
-              </div>
-            </li>
-            <li>
-              <div className={styles.userDetails}>
-                <img src='/images/profile-photo-6.jpg' alt='Profile Photo' />
-                <p>Andrew Musk</p>
-              </div>
-              <div className={styles.lastActive}>
-                <span>2 min</span>
-              </div>
-            </li>
-            <li>
-              <div className={styles.userDetails}>
-                <img src='/images/profile-photo-1.jpg' alt='Profile Photo' />
-                <p>Andrew Musk</p>
-              </div>
-              <div className={styles.lastActive}>
-                <span className={styles.activeNow}></span>
-              </div>
-            </li>
-            <li>
-              <div className={styles.userDetails}>
-                <img src='/images/profile-photo-2.jpg' alt='Profile Photo' />
-                <p>Andrew Musk</p>
-              </div>
-              <div className={styles.lastActive}>
-                <span className={styles.activeNow}></span>
-              </div>
-            </li>
-            <li>
-              <div className={styles.userDetails}>
-                <img src='/images/profile-photo-1.jpg' alt='Profile Photo' />
-                <p>Andrew Musk</p>
-              </div>
-              <div className={styles.lastActive}>
-                <span className={styles.activeNow}></span>
-              </div>
-            </li>
-            <li>
-              <div className={styles.userDetails}>
-                <img src='/images/profile-photo-5.jpg' alt='Profile Photo' />
-                <p>Andrew Musk</p>
-              </div>
-              <div className={styles.lastActive}>
-                <span className={styles.activeNow}></span>
-              </div>
-            </li>
-            <li>
-              <div className={styles.userDetails}>
-                <img src='/images/profile-photo-4.jpg' alt='Profile Photo' />
-                <p>Andrew Musk</p>
-              </div>
-              <div className={styles.lastActive}>
-                <span>2 min</span>
-              </div>
-            </li>
-            <li>
-              <div className={styles.userDetails}>
                 <img src='/images/profile-photo-7.jpg' alt='Profile Photo' />
+                <p>Andrew Musk</p>
+              </div>
+              <div className={styles.lastActive}>
+                <span>2 min</span>
+              </div>
+            </li>
+            <li>
+              <div className={styles.userDetails}>
+                <img src='/images/profile-photo-8.jpg' alt='Profile Photo' />
+                <p>Andrew Musk</p>
+              </div>
+              <div className={styles.lastActive}>
+                <span>2 min</span>
+              </div>
+            </li>
+            <li>
+              <div className={styles.userDetails}>
+                <img src='/images/profile-photo-9.jpg' alt='Profile Photo' />
+                <p>Andrew Musk</p>
+              </div>
+              <div className={styles.lastActive}>
+                <span className={styles.activeNow}></span>
+              </div>
+            </li>
+            <li>
+              <div className={styles.userDetails}>
+                <img src='/images/profile-photo-10.jpg' alt='Profile Photo' />
+                <p>Andrew Musk</p>
+              </div>
+              <div className={styles.lastActive}>
+                <span className={styles.activeNow}></span>
+              </div>
+            </li>
+            <li>
+              <div className={styles.userDetails}>
+                <img src='/images/profile-photo-11.jpg' alt='Profile Photo' />
+                <p>Andrew Musk</p>
+              </div>
+              <div className={styles.lastActive}>
+                <span className={styles.activeNow}></span>
+              </div>
+            </li>
+            <li>
+              <div className={styles.userDetails}>
+                <img src='/images/profile-photo-12.jpg' alt='Profile Photo' />
+                <p>Andrew Musk</p>
+              </div>
+              <div className={styles.lastActive}>
+                <span className={styles.activeNow}></span>
+              </div>
+            </li>
+            <li>
+              <div className={styles.userDetails}>
+                <img src='/images/profile-photo-13.jpg' alt='Profile Photo' />
+                <p>Andrew Musk</p>
+              </div>
+              <div className={styles.lastActive}>
+                <span>2 min</span>
+              </div>
+            </li>
+            <li>
+              <div className={styles.userDetails}>
+                <img src='/images/profile-photo-14.jpg' alt='Profile Photo' />
                 <p>Andrew Musk</p>
               </div>
               <div className={styles.lastActive}>
@@ -164,6 +169,26 @@ const RightSideContent = () => {
           </ul>
         </div>
         <hr />
+        <div className={styles.extras}>
+          <ul>
+            <li>
+              <BsInfoCircleFill />
+              <span>Helpline</span>
+            </li>
+            <li>
+              <BsInfoCircleFill />
+              <span>Gee Vibes</span>
+            </li>
+            <li>
+              <BsInfoCircleFill />
+              <span>Dolly Coin</span>
+            </li>
+            <li>
+              <BsInfoCircleFill />
+              <span>Unit Converter</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );

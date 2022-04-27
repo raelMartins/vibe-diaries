@@ -1,0 +1,234 @@
+@import './mixins.module.scss';
+
+.post {
+  padding: 3rem;
+  background-color: white;
+  border-radius: 0.4rem;
+
+  //   img {
+  //     width: 5rem;
+  //     height: 5rem;
+  //     border-radius: 1rem;
+  //   }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    svg {
+      font-size: 4rem;
+      cursor: pointer;
+      color: #5a5a5a;
+    }
+    .postBy {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+    }
+    .userImage {
+      img {
+        width: 4.2rem;
+        height: 4.2rem;
+        border-radius: 1rem;
+      }
+    }
+    .userDetails {
+      display: flex;
+      flex-direction: column;
+      b {
+        color: #ff4500;
+        font-weight: 500;
+        cursor: pointer;
+      }
+      .time {
+        padding: 0.2rem;
+      }
+    }
+  }
+  .postContent {
+    font-size: 1.6rem;
+    h4 {
+      font-weight: 600;
+    }
+    .noImage {
+      display: none;
+    }
+    .oneImage,
+    .twoImages,
+    .threeImages,
+    .fourImages {
+      position: relative;
+      padding: 2rem 0rem;
+      display: grid;
+      gap: 1.6rem;
+      .left,
+      .right {
+        display: grid;
+        gap: 1.6rem;
+        max-height: 35rem;
+        span {
+          border-radius: 1rem;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          img {
+            width: 110%;
+          }
+        }
+      }
+    }
+    .oneImage {
+      grid-template-columns: 1fr;
+      .left {
+        grid-template-rows: 1fr;
+      }
+      .right {
+        display: none;
+      }
+    }
+    .twoImages,
+    .threeImages,
+    .fourImages {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .twoImages {
+      .left,
+      .right {
+        grid-template-rows: 1fr;
+        gap: 0rem;
+      }
+    }
+    .threeImages {
+      .left {
+        gap: 0rem;
+        grid-template-rows: 1fr;
+      }
+      .right {
+        grid-template-rows: 1fr 1fr;
+      }
+    }
+    .fourImages {
+      .left {
+        grid-template-rows: 1fr 1fr;
+      }
+      .right {
+        grid-template-rows: 1fr 1fr;
+      }
+    }
+    .playButton {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 6rem;
+      color: white;
+      cursor: pointer;
+    }
+  }
+  hr {
+    height: 0.1rem;
+    border-radius: 1rem;
+    background-color: #888888;
+    border: none;
+  }
+  .postStatistics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      align-items: center;
+      span {
+        position: relative;
+        left: -50%;
+        width: 2.3rem;
+        height: 2.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 0.4rem;
+        img {
+          //   width: 100%;
+          border-radius: 0.4rem;
+        }
+      }
+      span:nth-child(1) {
+        left: 0;
+      }
+      span:nth-child(2) {
+        left: -0.8rem;
+      }
+      span:nth-child(3) {
+        left: -1.6rem;
+      }
+      span:nth-child(4) {
+        left: -2.4rem;
+        background-color: #1976d2;
+        text-align: center;
+        font-size: 1rem;
+        color: white;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+      color: #888888;
+    }
+  }
+  .postActions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span {
+      padding: 2rem;
+      color: #888888;
+      transition: 0.4s;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      cursor: pointer;
+      &:hover {
+        color: #ff4500;
+      }
+      svg {
+        font-size: 2.2rem;
+      }
+    }
+  }
+  .addComment {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    img {
+      width: 4.2rem;
+      height: 4.2rem;
+      border-radius: 1rem;
+    }
+    input {
+      background-color: #f5f5f5;
+      padding: 1.8rem 2rem;
+      color: #a4a3a3;
+      border-radius: 0.4rem;
+      width: 100%;
+      border: none;
+      outline: none;
+      font-size: 1.4rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      resize: none;
+      &::placeholder {
+        color: #9c9898;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
