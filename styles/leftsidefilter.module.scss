@@ -6,7 +6,7 @@
   top: 0;
   padding: 0rem 4.2rem;
   display: none;
-  @include desktop {
+  @media screen and (min-width: 1600px) {
     display: block;
   }
   .addGroupButton {
